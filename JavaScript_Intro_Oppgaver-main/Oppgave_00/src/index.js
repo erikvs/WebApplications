@@ -96,12 +96,19 @@ if (newField2.value.length > 3){
 
 // OPPGAVE 8
 //Hent ut alle barna av ul med klasse .children. Gi oddetall-barna grønn border mens partall skal ha pink. Bruk knappen med id #color for å gjøre endringen. 
-//Getting the list.
-let listToChange = document.getElementById("children");
+//Getting the ul.
+//const elements = document.getElementById("children");
+//Generate Array based on ul content.
+//const elementsToChange = Array.from(elements.children);
+let elementsToChange = document.getElementById("children").getElementsByTagName("li");
+//let elementsToChange = Array.from(document.getElementById("children"));
 //Getting the colour button.
 let colourButton = document.getElementById("color");
+
 colourButton.addEventListener('click', () => {
-    listToChange.forEach((element) => {
-        if 
-})
+    console.log(elementsToChange);
+//     console.log(elementsToChange.firstChild())
+//    elementsToChange.forEach((element) => {
+//        let colourChoice = (elementsToChange.indexOf(element) == 2 % 0) ? element.style.borderBlockColor = "#FF1493" : "#7FFF00";
+//})
 });
