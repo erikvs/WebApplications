@@ -92,23 +92,20 @@ if (newField2.value.length > 3){
 }
 });
 
-//TODO: working on 8. 
-
 // OPPGAVE 8
-//Hent ut alle barna av ul med klasse .children. Gi oddetall-barna grønn border mens partall skal ha pink. Bruk knappen med id #color for å gjøre endringen. 
-//Getting the ul.
-//const elements = document.getElementById("children");
-//Generate Array based on ul content.
-//const elementsToChange = Array.from(elements.children);
-let elementsToChange = document.getElementById("children").getElementsByTagName("li");
-//let elementsToChange = Array.from(document.getElementById("children"));
-//Getting the colour button.
-let colourButton = document.getElementById("color");
 
+// Generate HTML collection based on ul content.
+const elementsToChange = document.getElementsByClassName("children")[0].children;
+// Generate Array from collection.
+const arrayToChange = Array.from(elementsToChange);
+// Getting the colour button.
+const colourButton = document.getElementById("color");
+// Event listener and on click to give border with colour.
 colourButton.addEventListener('click', () => {
-    console.log(elementsToChange);
-//     console.log(elementsToChange.firstChild())
-//    elementsToChange.forEach((element) => {
-//        let colourChoice = (elementsToChange.indexOf(element) == 2 % 0) ? element.style.borderBlockColor = "#FF1493" : "#7FFF00";
-//})
+    console.log(arrayToChange);
+    arrayToChange.forEach((element, index) => {
+        (index % 2 == 0) ? 
+            elementsToChange.item(index).style.border = "thick solid #FF1493" 
+            : elementsToChange.item(index).style.border = "thick solid #7FFF00";
+})
 });

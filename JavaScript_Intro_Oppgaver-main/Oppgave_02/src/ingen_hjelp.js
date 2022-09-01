@@ -2,6 +2,10 @@ import './styles.css';
 import { users } from './util';
 
 // TODO: Hent HTML #id med getElementById
+
+// Getting list of names.
+// Getting place to put list.
+
 // TODO: Lag en funksjon som kan brukes til å skrive ut HTMLen for å se brukerene. Du kan bruke users importert over for å hente en liste med 10 brukere
 // TODO: Lag en funksjon som håndterer søket og oppdaterer grensesnittet med resultatet fra søket
 // TODO: Lag en funksjon som håndterer filteret og oppdaterer grensesnittet med resultatet fra filteret
