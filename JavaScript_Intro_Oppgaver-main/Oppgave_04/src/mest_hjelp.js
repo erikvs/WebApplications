@@ -13,7 +13,7 @@ const getGuess = () => {
   return Array.from(answers).map((answer) => answer.value);
 };
 
-// Checking that guesses sequence is correct or false.
+// Function for checking guessed sequence is correct or false.
 const checkNumberSeq = () => {
   const guess = getGuess();
   let isCorrect = numbers.sort().join('') === guess.join('');
