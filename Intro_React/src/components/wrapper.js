@@ -1,15 +1,8 @@
-const Wrapper = ({children}) => {
+const Wrapper = (props) => {
     return (
+        <section className='flex'>{props.children}</section> 
 
-        <section className='flex'>{children}</section> 
- 
 );
 };
-
-
-
-
-
-
 
 export default Wrapper;
