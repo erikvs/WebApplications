@@ -1,8 +1,12 @@
 import Title from "./title";
 
 // TASK 3
-const MyComponent = ({title}) => 
-<Title title="It Works"/>;
+const MyComponent = ({title}) => {
+    return (
+<Title title="It Works"/>
+);
+};
+
 
 
 // TASK 2
