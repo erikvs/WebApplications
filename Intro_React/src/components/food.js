@@ -1,3 +1,4 @@
+// TASK 7
 
  const food = ['Pizza', 'Hamburger', 'Coke'];
 
