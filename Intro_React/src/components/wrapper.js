@@ -1,7 +1,7 @@
 const Wrapper = ({children}) => {
     return (
 
-        <section>{children}</section> 
+        <section className='flex'>{children}</section> 
  
 );
 };
