@@ -1,9 +1,9 @@
 import MyComponent from "./components/myComponent";
 
-//{title}
 
-const App = () => (
-<MyComponent />
+
+const App = ({title}) => (
+<MyComponent /> 
 
 );
 
@@ -11,4 +11,3 @@ const App = () => (
 export default App;
 
 
-{/* <MyComponent title="It Works" /> */}
