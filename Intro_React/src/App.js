@@ -2,6 +2,7 @@ import MyComponent from "./components/myComponent";
 import Title from "./components/title";
 import Wrapper from "./components/wrapper";
 import React from "react";
+import Food from "./components/food";
 
 const food = ['Pizza', 'Hamburger', 'Coke'];
 
@@ -9,7 +10,7 @@ const food = ['Pizza', 'Hamburger', 'Coke'];
 const App = ({title}) => {
 return (
 
-<Wrapper><Title title="Test" /></Wrapper>
+<Food /> 
 );
 };
 
