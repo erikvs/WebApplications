@@ -3,19 +3,30 @@ import MyComponent from "./components/myComponent";
 import Title from "./components/title";
 import Wrapper from "./components/wrapper";
 import Food from "./components/food";
-//import Button from "./components/button"
-import InputField from "./components/inputField";
+
+// import hook to use
+import {useState} from "react"
 
 const food = ['Pizza', 'Hamburger', 'Coke'];
+//const [value, setValue] = useState('Initial Value')
+
+
+const App = ({title}) => {
+// ready hook use, default value set
+const [value, setValue] = useState('Initial Value')
 
 // TASK 8
 const handleClick = () => {
     console.log("Clicked");
 };
 
-
-
-const App = ({title}) => {
+    // TASK 9 + 10
+const handleChange = (e) => {
+    // updates value with user input
+    setValue(e.target.value);
+    console.log("change");
+};
+    
 return (
 <>
 <MyComponent /> 
@@ -24,7 +35,7 @@ return (
 
 
 <button onClick={handleClick}>BUTTON</button>
-
+<input type="text" onChange={handleChange} value={value} />
 
 
 </>
@@ -51,11 +62,8 @@ export default App;
 //<Food />
 
 // TASK 8
-//<Button/>
+//<button onClick={handleClick}>BUTTON</button>
 
 // TASK 9
-// <InputField/>
+// <input type="text" onChange={handleChange} />
 
-// TASK 11
-// <Button/>   
-// <InputField/>
