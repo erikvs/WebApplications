@@ -3,18 +3,31 @@ import MyComponent from "./components/myComponent";
 import Title from "./components/title";
 import Wrapper from "./components/wrapper";
 import Food from "./components/food";
-import Button from "./components/button"
+//import Button from "./components/button"
 import InputField from "./components/inputField";
 
 const food = ['Pizza', 'Hamburger', 'Coke'];
+
+// TASK 8
+const handleClick = () => {
+    console.log("Clicked");
+};
 
 
 
 const App = ({title}) => {
 return (
-    
-<InputField/>
+<>
+<MyComponent /> 
+<Wrapper><Title title="Test" /></Wrapper>
+<Food />
 
+
+<button onClick={handleClick}>BUTTON</button>
+
+
+
+</>
 );
 };
 
@@ -41,4 +54,8 @@ export default App;
 //<Button/>
 
 // TASK 9
+// <InputField/>
+
+// TASK 11
+// <Button/>   
 // <InputField/>

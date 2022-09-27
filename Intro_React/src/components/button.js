@@ -3,6 +3,7 @@
 const Button = () => {
     const handleClick = () => {
         console.log("Clicked");
+        console.log(value);
     };
 return (
     <>
