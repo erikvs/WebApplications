@@ -13,6 +13,8 @@ const InputField = () => {
         // updates value with user input
         setValue(e.target.value);
 
+        //send the data to button here? so when content changes
+
         console.log("change");
         //console.log(value)
     };

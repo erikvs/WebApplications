@@ -7,7 +7,7 @@ import Alert from "./components/alert";
 
 // FOR TASK 10
 // import hook to use
-//import {useState} from "react"
+import {useState} from "react"
 
 //const [value, setValue] = useState('Initial Value')
 
@@ -16,6 +16,7 @@ const food = ['Pizza', 'Hamburger', 'Coke'];
 const App = ({title}) => {
 // // ready hook use, default value set
 // const [value, setValue] = useState('Initial Value')
+const [inputValue, setInputValue] = useState('')
 
 // TASK 8
 // const handleClick = () => {
@@ -40,8 +41,8 @@ return (
 <Wrapper><Title title="Test" /></Wrapper>
 <Food />
 
-<Alert />
-
+<Alert setInputValue={setInputValue}/>
+<p>{inputValue}</p>
 </>
 );
 };
